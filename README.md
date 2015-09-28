@@ -10,3 +10,5 @@ Flowchart of the program:
 80 - 10cm = value is mapped to the 30 leds, color will also fade from cyan to yellow depending on distance
  
 10<cm = color will cycle between orange to yellow, with breathing animation, light will turn off after 10 cycles
+
+video demo: https://youtu.be/T8M_66g_C6g
