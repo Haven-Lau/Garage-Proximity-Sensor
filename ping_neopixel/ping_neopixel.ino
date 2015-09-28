@@ -36,6 +36,15 @@ void loop(){
   Serial.print(cm);
   Serial.print("cm");
   Serial.println();
+  if (cm == 0)
+    while(cm > 100){
+      long cm = cmDetect();
+  
+      Serial.print(cm);
+      Serial.print("cm");
+      Serial.println();
+      delay(200);
+    }
   if (cm > 8){
     timeDone = 0;
     
@@ -60,7 +69,7 @@ void loop(){
     }
     int glowOffset = -30;
     int valOffset = 5;
-  }else if (cm <= 8){
+  }else if (cm <= 8 && cm > 1){
     
     //CLOSE ZONE
     if (timeDone > 250){
